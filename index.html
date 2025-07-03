@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consola Binaria Simple</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #1a1a1a;
+            color: #00ff00;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #00ff00;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #000;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #00ff00;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #00cc00;
+        }
+        #output {
+            background-color: #000;
+            border: 1px solid #00ff00;
+            padding: 15px;
+            min-height: 150px;
+            overflow-y: auto;
+            white-space: pre-wrap; /* Mantiene los saltos de línea */
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Consola Binaria Simple</h1>
+        <p>Introduce números binarios (ej. 10110) y selecciona una operación. Los números se asumen de 8 bits para las operaciones lógicas.</p>
+
+        <input type="text" id="input1" placeholder="Primer número binario">
+        <input type="text" id="input2" placeholder="Segundo número binario (si aplica)">
+
+        <div>
+            <button onclick="performOperation('ADD')">Sumar</button>
+            <button onclick="performOperation('SUBTRACT')">Restar</button>
+            <button onclick="performOperation('AND')">AND Lógico</button>
+            <button onclick="performOperation('OR')">OR Lógico</button>
+            <button onclick="performOperation('XOR')">XOR Lógico</button>
+            <button onclick="performOperation('NOT')">NOT Lógico (primer número)</button>
+            <button onclick="clearOutput()">Limpiar</button>
+        </div>
+
+        <div id="output">
+            Bienvenido a la Consola Binaria.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
