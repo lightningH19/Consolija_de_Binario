@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consola Binaria Simple</title>
+    <title>Calculadora Binaria</title>
     <style>
         body {
             font-family: monospace;
@@ -70,6 +71,23 @@
             Bienvenido a la Consola Binaria.
         </div>
     </div>
+    <h2>Calculadora Binaria</h2>
+
+  <input type="text" id="bin1" placeholder="Número binario 1">
+  <br>
+  <input type="text" id="bin2" placeholder="Número binario 2">
+  <br>
+  <select id="operation">
+    <option value="add">Sumar</option>
+    <option value="subtract">Restar</option>
+    <option value="multiply">Multiplicar</option>
+    <option value="divide">Dividir</option>
+  </select>
+  <br>
+  <button onclick="calculate()">Calcular</button>
+  <p id="result"></p>
+
+  <script src="calculator.js"></script>
 
     <script src="script.js"></script>
 </body>
