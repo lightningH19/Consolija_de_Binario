@@ -1,0 +1,46 @@
+body {
+    font-family: monospace;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #00ff00;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+button {
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+button:hover {
+    background-color: #00cc00;
+}
+#output {
+    background-color: #000;
+    border: 1px solid #00ff00;
+    padding: 15px;
+    min-height: 150px;
+    overflow-y: auto;
+    white-space: pre-wrap; /* Mantiene los saltos de línea */
+    margin-top: 15px;
+    }
+
+.Pietro {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}

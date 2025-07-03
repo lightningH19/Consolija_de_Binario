@@ -5,49 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consola Binaria Simple</title>
     <title>Calculadora Binaria</title>
-    <style>
-        body {
-            font-family: monospace;
-            background-color: #1a1a1a;
-            color: #00ff00;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            border: 1px solid #00ff00;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-        }
-        input[type="text"] {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #000;
-            color: #00ff00;
-            border: 1px solid #00ff00;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #00ff00;
-            color: #000;
-            border: none;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        button:hover {
-            background-color: #00cc00;
-        }
-        #output {
-            background-color: #000;
-            border: 1px solid #00ff00;
-            padding: 15px;
-            min-height: 150px;
-            overflow-y: auto;
-            white-space: pre-wrap; /* Mantiene los saltos de línea */
-            margin-top: 15px;
-        }
-    </style>
+    
+    <style src="style.css"></style>
 </head>
 <body>
     <div class="container">
@@ -73,9 +32,9 @@
     </div>
     <h2>Calculadora Binaria</h2>
 
-  <input type="text" id="bin1" placeholder="Número binario 1">
+  <input type="text" class="Pietro" id="bin1" placeholder="Número binario 1">
   <br>
-  <input type="text" id="bin2" placeholder="Número binario 2">
+  <input type="text" class="Pietro" id="bin2" placeholder="Número binario 2">
   <br>
   <select id="operation">
     <option value="add">Sumar</option>
@@ -84,11 +43,11 @@
     <option value="divide">Dividir</option>
   </select>
   <br>
-  <button onclick="calculate()">Calcular</button>
-  <p id="result"></p>
+  <button class="Pietro" onclick="calculate()">Calcular</button>
+  <p class="Pietro" id="result"></p>
 
   <script src="calculator.js"></script>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
